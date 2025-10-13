@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    background-color: rgb(242, 203, 145);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    color: white;
+    font-family: "Raleway", sans-serif; 
+    padding: 0px 40px;
+}
+
+.nav-menu{
+    display: flex;
+    padding: 0px 60px;
+    gap: 50px;
+
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway", sans-serif; 
+    font-weight: bolder;
+    font-size: large;
+}
+
+.nav-item{
+    display: flex;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.nav-item::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+    transform-origin: center;
+    transform: scalex(0);
+    transition: 0.25s linear;
+}
+
+.nav-item:hover::after{
+    transform: scaleX(1);
+}
+
+.main{
+    padding: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bolder;
+}
+
+.main h2 {
+    margin-left: 50px;
+}
+.main img{
+    width: 20px;
+    height: 20px;
+}
+
+.main-container{
+    padding: 30px;
+    display: flex;
+    gap: 60px;
+}
+
+.main-menu{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+    height: 250px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-decoration: none;
+    color: black    ;
+    transition: 0.3s;
+    transition: transform 0.3 ease;
+}
+
+.main-menu:hover{
+    transform: scale(1.05);
+}
+
+.main-image{
+    padding-right: 2px;
+}
+
+.main-image img{
+    border: 1px solid black;
+    height: 150px;
+    width: 100%;
+    box-sizing: border-box;
+   margin-top: 2px;
+   
+}
