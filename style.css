@@ -76,3 +76,17 @@ body {
   line-height: 1.5;
 
 }
+
+.center-title {
+      text-align: center;
+      color: #7b4f26;
+      font-family: 'Playfair Display', serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about-box, .recipe-box, .gallery-container, .contact-container {
+      background-color: #fff7ea;
+      border-radius: 16px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
